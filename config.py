@@ -16,13 +16,13 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # The LLM provider in my case here is openai
-LLM_PROVIDER = "openai"
+LLM_PROVIDER = "groq"
 
 # The key needed to access the api
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 
 # The model to use with the question
-OPENAI_MODEL_NAME = "gpt-4o-mini"
+GROQ_MODEL_NAME = "openai/gpt-oss-120b"
 
 # The setting off temperature is here to assure that the model is determinst.
 # This means that the answers must be close enough to the provided document
